@@ -4,14 +4,43 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>com.github.vindell</groupId>
-		<artifactId>spring-boot-extend-starters</artifactId>
-		<version>1.5.8-SNAPSHOT</version>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.9.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	
+	<groupId>com.github.vindell</groupId>
 	<artifactId>spring-boot-starter-axis</artifactId>
-	<name>Spring Boot Axis Biz Starter</name>
+	<version>1.5.9-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>spring-boot-starter-axis</name>
+	<url>https://github.com/vindell/spring-boot-starter-axis</url>
 	<description>Starter for Axis</description>
+	
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<url>https://github.com/vindell/spring-boot-starter-axis</url>
+		<connection>scm:git:git://github.com/vindell/spring-boot-starter-axis.git</connection>
+		<developerConnection>scm:git:git@github.com/vindell/spring-boot-starter-axis.git</developerConnection>
+	</scm>
+	
+	<properties>
+		<!-- Dependency versions -->
+		<activation.version>1.1.1</activation.version>
+		<axis.version>1.4</axis.version>
+		<commons-logging.version>1.2</commons-logging.version>
+		<commons-discovery.version>0.5</commons-discovery.version>
+		<commons-text.version>1.1</commons-text.version>
+	</properties>
 	
 	<dependencies>
 
@@ -54,12 +83,8 @@
 		<dependency>
 			<groupId>javax.activation</groupId>
 			<artifactId>activation</artifactId>
+			<version>${activation.version}</version>
 		</dependency>
-		<!-- JavaMail API 
-		<dependency>
-		    <groupId>javax.mail</groupId>
-		    <artifactId>javax.mail-api</artifactId>
-		</dependency> -->
 		<!-- JavaMail API (sun)
 		注意：
 			有的jar没有包含sun的实现，只包含了api，这类jar名称通常为javax.mail-api-x.x.x.jar，在使用smtp协议发邮件过程中会报错：
@@ -70,10 +95,6 @@
 		    <artifactId>javax.mail</artifactId>
 		</dependency>
 		
-		<dependency>
-			<groupId>axis</groupId>
-			<artifactId>axis-schema</artifactId>
-		</dependency>
 		<!-- 
 		http://zoroeye.iteye.com/blog/2042884
 		<dependency>
@@ -87,26 +108,37 @@
 		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis</artifactId>
+			<version>${axis.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-ant</artifactId>
+			<version>${axis.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-jaxrpc</artifactId>
+			<version>${axis.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-saaj</artifactId>
+			<version>${axis.version}</version>
 		</dependency>
 		<dependency>
 		    <groupId>commons-logging</groupId>
 		    <artifactId>commons-logging</artifactId>
+		    <version>${commons-logging.version}</version>
 		</dependency>
 		<dependency>
 		    <groupId>commons-discovery</groupId>
 		    <artifactId>commons-discovery</artifactId>
+		    <version>${commons-discovery.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>${commons-text.version}</version>
 		</dependency>
 
 	</dependencies>
