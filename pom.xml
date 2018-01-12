@@ -37,6 +37,8 @@
 		<!-- Dependency versions -->
 		<activation.version>1.1.1</activation.version>
 		<axis.version>1.4</axis.version>
+		<axis-schema.version>1.3</axis-schema.version>
+		<axis-wsdl4j.version>1.5.1</axis-wsdl4j.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-discovery.version>0.5</commons-discovery.version>
 		<commons-text.version>1.1</commons-text.version>
@@ -79,6 +81,22 @@
 			<artifactId>spring-boot-autoconfigure</artifactId>
 		</dependency>
  		
+ 		<dependency>
+		    <groupId>commons-logging</groupId>
+		    <artifactId>commons-logging</artifactId>
+		    <version>${commons-logging.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>commons-discovery</groupId>
+		    <artifactId>commons-discovery</artifactId>
+		    <version>${commons-discovery.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>${commons-text.version}</version>
+		</dependency>
+		
  		<!-- The JavaBeans(TM) Activation Framework is used by the JavaMail(TM) API to manage MIME data -->
 		<dependency>
 			<groupId>javax.activation</groupId>
@@ -95,15 +113,16 @@
 		    <artifactId>javax.mail</artifactId>
 		</dependency>
 		
-		<!-- 
-		http://zoroeye.iteye.com/blog/2042884
+		<!-- Axis : http://mvnrepository.com/artifact/org.apache.axis -->
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis-schema</artifactId>
+			<version>${axis-schema.version}</version>
+		</dependency>
 		<dependency>
 			<groupId>axis</groupId>
 			<artifactId>axis-wsdl4j</artifactId>
-		</dependency> -->
-		<dependency>
-			<groupId>wsdl4j</groupId>
-			<artifactId>wsdl4j</artifactId>
+			<version>${axis-wsdl4j.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.axis</groupId>
@@ -124,21 +143,6 @@
 			<groupId>org.apache.axis</groupId>
 			<artifactId>axis-saaj</artifactId>
 			<version>${axis.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-logging</groupId>
-		    <artifactId>commons-logging</artifactId>
-		    <version>${commons-logging.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>commons-discovery</groupId>
-		    <artifactId>commons-discovery</artifactId>
-		    <version>${commons-discovery.version}</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.apache.commons</groupId>
-		    <artifactId>commons-text</artifactId>
-		    <version>${commons-text.version}</version>
 		</dependency>
 
 	</dependencies>
