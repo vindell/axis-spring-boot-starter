@@ -410,10 +410,11 @@
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<!-- Compile dependencies -->
+		<!-- Spring Boot Test 依赖 -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-autoconfigure</artifactId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
  		
  		<dependency>
@@ -454,10 +455,16 @@
 			<artifactId>axis-schema</artifactId>
 			<version>${axis-schema.version}</version>
 		</dependency>
+		<!-- 
+		http://zoroeye.iteye.com/blog/2042884
 		<dependency>
 			<groupId>axis</groupId>
 			<artifactId>axis-wsdl4j</artifactId>
-			<version>${axis-wsdl4j.version}</version>
+			<version>${axis.version}</version>
+		</dependency> -->
+		<dependency>
+			<groupId>wsdl4j</groupId>
+			<artifactId>wsdl4j</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.axis</groupId>
@@ -479,7 +486,7 @@
 			<artifactId>axis-saaj</artifactId>
 			<version>${axis.version}</version>
 		</dependency>
-
+		
 	</dependencies>
 
 </project>
