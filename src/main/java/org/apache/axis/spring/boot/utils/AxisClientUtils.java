@@ -20,19 +20,15 @@ public final class AxisClientUtils {
 	protected static Service service = new Service();
 	
 	/**
-	 * 
-	 * @description	： TODO
-	 * @author 		： <a href="https://github.com/vindell">vindell</a>
-	 * @date 		：2017年11月13日 下午5:52:12
 	 * @param endpoint		: 调用地址
 	 * @param optName		: WSDL里面描述的操作名
 	 * @param usesoap		: 是否使用SOAP模式
 	 * @param returnType	: 返回参数类型，如：org.apache.axis.encoding.XMLType.XSD_STRING
 	 * @param params		: 参数
-	 * @return
-	 * @throws ServiceException
-	 * @throws MalformedURLException
-	 * @throws RemoteException
+	 * @return 返回结果
+	 * @throws ServiceException ServiceException
+	 * @throws MalformedURLException MalformedURLException
+	 * @throws RemoteException RemoteException
 	 */
 	public static Object invoke(String endpoint, QName optName,boolean usesoap,QName returnType,Parameter ... params) throws ServiceException, MalformedURLException, RemoteException{
 		//创建调用对象
