@@ -15,7 +15,7 @@ axis starter for spring boot
 <dependency>
 	<groupId>${project.groupId}</groupId>
 	<artifactId>spring-boot-starter-axis</artifactId>
-	<version>${project.version}</version>
+	<version>1.0.0.RELEASE</version>
 </dependency>
 ```
 
