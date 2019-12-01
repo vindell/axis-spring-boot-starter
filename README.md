@@ -1,5 +1,5 @@
-# spring-boot-starter-axis
-axis starter for spring boot
+# axis-spring-boot-starter
+Axis starter for spring boot
 
 ### 说明
 
@@ -14,7 +14,7 @@ axis starter for spring boot
 ``` xml
 <dependency>
 	<groupId>${project.groupId}</groupId>
-	<artifactId>spring-boot-starter-axis</artifactId>
+	<artifactId>axis-spring-boot-starter</artifactId>
 	<version>${project.version}</version>
 </dependency>
 ```
