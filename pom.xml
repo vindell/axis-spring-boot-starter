@@ -6,12 +6,12 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.1.4.RELEASE</version>
+		<version>2.2.1.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	
 	<groupId>com.github.vindell</groupId>
-	<artifactId>spring-boot-starter-axis</artifactId>
+	<artifactId>axis-spring-boot-starter</artifactId>
 	<description>Spring Boot Starter For Axis</description>
 	<version>1.0.1-SNAPSHOT</version>
 	<name>${project.groupId}:${project.artifactId}</name>
@@ -480,9 +480,11 @@
 			有的jar没有包含sun的实现，只包含了api，这类jar名称通常为javax.mail-api-x.x.x.jar，在使用smtp协议发邮件过程中会报错：
 			另一种jar是包含了sun的实现的，名称通常为javax.mail-x.x.x.jar，使用smtp协议发邮件正常！
 		-->
+		<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
 		<dependency>
 		    <groupId>com.sun.mail</groupId>
 		    <artifactId>javax.mail</artifactId>
+		    <version>1.6.2</version>
 		</dependency>
 		
 		<!-- Axis : http://mvnrepository.com/artifact/org.apache.axis -->
